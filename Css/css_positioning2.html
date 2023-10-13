@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      div {
+        padding: 10px 15px;
+        text-align: center;
+      }
+      #Parent-three {
+        background: linear-gradient(45deg, blue, yellow, green);
+        width: 500px;
+        height: 400px;
+        position: relative;
+      }
+      #Parent-two {
+        background: linear-gradient(45deg, blue, yellow, green);
+        width: 400px;
+        height: 300px;
+        position: relative;
+      }
+      #Parent-one {
+        background: linear-gradient(45deg, blue, yellow, green);
+        width: 300px;
+        height: 200px;
+        position: relative;
+      }
+      #Parent-one>#Child {
+        background-color: black;
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        /* top: 10px;
+        left: 20px; */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Parent-three">
+      <div id="Parent-two">
+        <div id="Parent-one">
+          <div id="Child">
+            <h2>Css Positioning</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

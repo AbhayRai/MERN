@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css_Positioning</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      #Parent {
+        box-shadow: 0px 0px 10px rgb(44, 43, 43);
+        margin: auto;
+        margin-top: 100px;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        position: relative;
+        
+      }
+      div:hover {
+        cursor: pointer;
+      }
+     
+      img {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+      }
+      
+      div > #Child {
+        box-shadow: 0px 0px 10px rgb(44, 43, 43);
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: white;
+        
+      }
+      p {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Parent">
+      <img src="../Image/Chiru.jpg" alt="No Image" />
+      <div id="Child">
+        <h2>Chiranjeevi:-</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tenetur,
+          nobis expedita ex odio magni. Incidunt magnam omnis consectetur ipsa.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          animi alias, cupiditate architecto tempore aliquam accusantium dolores
+          voluptatem ex quidem aspernatur et sint fugiat quo incidunt omnis
+          nobis corporis eum dolorum cum? Animi quis natus impedit ad deserunt,
+          in voluptate, est quam beatae velit atque recusandae expedita alias,
+          vero architecto.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>

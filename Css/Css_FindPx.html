@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Px</title>
+</head>
+<body>
+    <h1>Screen Size: <span id="display"></span>Px</h1>
+    <script>
+        window.addEventListener('resize',function()
+        {
+            let screenSize=window.innerWidth;
+            document.getElementById('display').innerHTML=screenSize;
+        })
+    </script>
+</body>
+</html>
