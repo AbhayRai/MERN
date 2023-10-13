@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Transform</title>
+    <style>
+      /* * {
+        margin: 0px;
+      } */
+      #Parent {
+        box-shadow: 0px 0px 10px black;
+        width: 350px;
+        height: 250px;
+        margin: auto;
+        margin-top: 300px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+      #Parent > img {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        transition: all 1s linear 0s;
+      }
+      #Parent > img:hover {
+        filter: grayscale(100%);
+        cursor: pointer;
+      }
+      #Parent > #content {
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background-color: cyan;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateY(0%);
+        transition: all 1s linear 3s;
+      }
+      #Parent > #content-one {
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background-color: pink;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateY(0%);
+        transition: all 1s linear 2s;
+      }
+      #Parent > #content-two {
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateX(0%);
+        transition: all 1s linear 1s;
+      }
+      #Parent > #content-three {
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+       background-color: blueviolet;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateX(0%);
+        transition: all 1s linear 0s;
+      }
+
+      #Parent:hover > #content {
+        transform: translateY(100%);
+      }
+      #Parent:hover > #content-one {
+        transform: translateY(-100%);
+      }
+      #Parent:hover > #content-two {
+        transform: translateX(-100%);
+      }
+      #Parent:hover > #content-three {
+        transform: translateX(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Parent">
+      <img src="../Image/Chiru.jpg" alt="No Image" />
+      <div id="content"></div>
+      <div id="content-one"></div>
+      <div id="content-two"></div>
+      <div id="content-three"></div>
+    </div>
+  </body>
+</html>
