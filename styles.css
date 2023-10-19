@@ -1,67 +1,162 @@
-* {
+*
+{
     margin: 0px;
 }
-
-header {
-    background: linear-gradient(45deg, cyan, green, yellow, red);
-    padding: 10px;
-
+#content>h1
+{
+   
+    color: white;
+    padding: 4px;
 }
-
-nav {
-    background: linear-gradient(45deg, violet, black);
-    padding: 10px;
-    text-align: center;
+#content>p{
+    color: white;
 }
-
-nav>a {
+header{
+    display: flex;
+    background:linear-gradient(45deg,darkblue,black,orange);
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    
+}
+#header>h1{
+    color: white;
+    padding: 15px;
+}
+header>#links>a{
     color: white;
     text-decoration: none;
-    margin: 10px;
+    padding: 10px;
 }
-
-aside {
-    background: linear-gradient(45deg, cyan, green, yellow, red);
-    width: 200px;
-    height: 605px;
-    text-align: center;
-    float: left;
-
-
-}
-
-aside>a {
-    display: block;
-    margin-bottom: 40px;
-    text-decoration: none;
-    color: white;
-
-}
-
-aside>a:hover {
+header>#links>a:hover{
     text-decoration: underline;
 }
+@media (min-width:0px) and (max-width:900px)
+{
+    header
+    {
+        flex-direction:column;
+        height: 75px;
+    }
+    #links{
+        position: relative;
+        top: -10px;
+    }
+}
 
-section {
-    position: relative;
-    left: 200px;
-    padding: 10px;
-    background: linear-gradient(45deg, violet, black);
-    color: white;
-
+#landing-page{
+background-image: url("../Image/team.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height:100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: black;
 
 
 }
-
-section>article {
-    border: 2px solid white;
+#landing-page>#content{
+text-align: center;
+color: white;
+height:100px;
+padding: 20px;
+}
+#landing-page>#content>h1{
     color: white;
+    font-size: 40px;
+}
+
+#landing-page>#content>button{
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
     padding: 5px;
+    margin: 10px;
+    color: white;
+    
+
+}
+#new{
+    text-align: center;
+    margin-top:  10px; ;
+}
+h1{
+    font-size: 40px;
+    color: darkblue;
+}
+p{
+    color: gray;
+    padding: 11px 16px;
+    margin: -6px;
+}
+button{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+#Team
+{
+    text-align: center;
+}
+.players>img{
+    width: 209px;
+    height: 235px;
+    margin: 10px;
+    border-radius: 20px;
+    
+    box-shadow: 0px 0px 10px blue;
+}
+#Top-order{
+    text-align: center;
+    margin: 30px;
+}
+#Players{
+    box-shadow: 0px 0px 10px blue;
+    width: 223px;
+    height: 345px;
+    margin: 20px;
+    border-radius:  20px;;
+    display: inline-block;
+    margin: 10px;
+    
+    
+    
+}
+#Players>figure>img{
+    width: 209px;
+    height: 235px;
+    border-radius: 20px;
+    
     
 }
 
-footer {
-    background: linear-gradient(45deg, cyan, green, yellow, red);
+#Top-order>h1{
     text-align: center;
-    padding: 5px;
+}
+figure{
+    margin: 0px;
+    /* border: 2px solid blue;
+    box-shadow: 0px 0px 10px blue; */
+    border-radius: 20px;
+}
+footer
+{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    height: 60px;
+}
+footer>small>a
+{
+    color: white;
+    padding: 2px;
 }
